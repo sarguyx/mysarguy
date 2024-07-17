@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asiatique - Example HTML Website</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Additional inline styling for demonstration purposes */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #526267;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: justify;
+      background-color: #4c5858;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .image-gallery {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .image-gallery img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    p {
+      text-align: justify;
+    }
+    
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 style="font-size: 2.5rem;">Lumphini Park</h1>
+  </header>
+  <div class="container">
+    <div class="image-gallery">
+      <img src="Lumphini Park.jpg" alt="Asiatique The Riverfront">
+    </div>
+    <p>
+      <strong>สวนลุมพินี</strong>หรือที่นิยมเรียกสั้น ๆ ว่า สวนลุม เป็นสวนสาธารณะระดับย่าน และถือเป็นสวนสาธารณะแห่งแรกของประเทศไทย เปิดให้บริการตั้งแต่ปี พ.ศ. 2468 ตั้งอยู่บนถนนพระรามที่ 4 ล้อมรอบด้วยถนนวิทยุ ถนนราชดำริ และถนนสารสิน แขวงลุมพินี เขตปทุมวัน กรุงเทพมหานคร ก่อสร้างในรัชสมัยพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว (รัชกาลที่ 7) ในที่ดินเดิมเนื้อที่ 360 ไร่ ณ ทุ่งศาลาแดง ซึ่งพระบาทสมเด็จพระมงกุฎเกล้าเจ้าอยู่หัว (รัชกาลที่ 6) พระราชทานไว้สำหรับสร้าง "สยามรัฐพิพิธภัณฑ์" เพื่อจัดแสดงสินค้าไทยเป็นครั้งแรก และจัดให้เป็น "สวนสาธารณะ" สำหรับประชาชน พร้อมทั้งพระราชทานนามว่า "สวนลุมพินี" ซึ่งเป็นชื่อสถานที่ประสูติของพระโคตมพุทธเจ้าในประเทศเนปาล แต่พระองค์เสด็จสวรรคตก่อนจึงไม่แล้วเสร็จ
+    </p>
+    <hr>
+  </div>
+
+  <script>
+    let counter = 0;
+    function addCSS() {
+      counter++;
+      if (counter % 2 !== 0) {
+        document.getElementById("head").innerHTML = '<title>Asiatique - Example HTML Website</title>\n<link rel="stylesheet" href="./styles.css" />';
+      } else {
+        document.getElementById("head").innerHTML = '<title>Asiatique - Example HTML Website</title>';
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asiatique - Example HTML Website</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Additional inline styling for demonstration purposes */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: justify;
+      background-color: #2f2929b9;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .image-gallery {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .image-gallery img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    p {
+      text-align: justify;
+    }
+    
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 style="font-size: 2.5rem;">Sky walk Sathon</h1>
+  </header>
+  <div class="container">
+    <div class="image-gallery">
+      <img src="Sky walk Sathon.jpg" alt="Asiatique The Riverfront">
+    </div>
+    <p>
+      <strong>skywalk BTS ช่องนนทรี</strong>สะพานไฟในเมืองที่สวยมาก เข้าฟรี ถ่ายรูปได้ไม่อั้น สายอินฟลูต้องไป !!ไปเดินเล่นช่วงนี้ลมโกรกเย็น ๆ ฟิน ๆ เหมาะไปกับแฟนม๊ากกก แต่ ‼ ใครไม่มีไม่ต้องเสียใจไป เพื่อนเรายังมี !! ลากกันไปค่ะ ตอนนี้ต้องถ่ายรูปเปิดแฟลชยกกล้องสูงสไตล์ #y2k เท่านั้น🤣 🫢การเดินทางก็ง่ายแสนง่าย ลง BTS สถานีช่องนนทรีถึงเลยจ้า แนะนำให้ถ่ายช่วงเย็น ๆ ค่ำ ๆ ที่ไฟติดแล้วนะ สวยปังอลังเต็ม 10 😍✨
+    </p>
+    <hr>
+  </div>
+
+  <script>
+    let counter = 0;
+    function addCSS() {
+      counter++;
+      if (counter % 2 !== 0) {
+        document.getElementById("head").innerHTML = '<title>Asiatique - Example HTML Website</title>\n<link rel="stylesheet" href="./styles.css" />';
+      } else {
+        document.getElementById("head").innerHTML = '<title>Asiatique - Example HTML Website</title>';
+      }
+    }

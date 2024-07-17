@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head id="head">
+  <title>Example HTML Website</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <header>
+    <h1>My favorite places near me</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="./Asiatque.html">Asiatque</a></li>
+      <li><a href="./Lumphini Park.html">Lumphini</a></li>
+      <li><a href="./Sky walk Sathon.html">Sky walk Sathon</a></li>
+    </ul>
+  </nav>
+  
+  <!-- เพิ่ม div สำหรับรูปภาพ -->
+  <div class="image-gallery">
+    <img src="Asiatque (1).jpg" alt="Image 1">
+    <img src="Lumphini Park.jpg" alt="Image 2">
+    <img src="Sky walk Sathon.jpg" alt="Image 3">
+  </div>
+
+  <script>
+    let counter = 0
+    function addCSS() {
+      counter++
+      if (counter % 2 !== 0) {
+        document.getElementById("head").innerHTML = '  <title>Example HTML Website</title> \n<link rel="stylesheet" href="./styles.css" />'
+      } else {
+
+        document.getElementById("head").innerHTML = '  <title>Example HTML Website</title> '
+
+      }
+    }
+  </script>
+</body>
+</html>
